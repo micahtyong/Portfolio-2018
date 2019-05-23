@@ -1,0 +1,54 @@
+.Card {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, rgba(48, 48, 48, 0.74) -28.89%, rgba(24, 12, 64, 0) 64.44%);
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.Card:hover img {
+    transform: translateY(-20px);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card img {
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.Card h3 {
+    color: white;
+    font-size: 30px;
+    margin: 20px 0 0 20px;
+    width: 190px;
+    z-index: 2;
+}
+
+.Card p {
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px; 
+    line-height: 21px;
+    text-align: center;
+    align-self: end;
+    margin: 0px 0px 10px 0px;
+    width: 220px;
+    z-index: 3;
+}
