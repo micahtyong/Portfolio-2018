@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
             {children}
           </div>
           <Footer data={data}>
-            © Copyright 2019. ALL RIGHTS RESERVED.<br></br>
+            © Copyright 2019. All rights reserved.<br></br>
           </Footer>
         </>
       )}
