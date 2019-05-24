@@ -36,7 +36,6 @@ const Layout = ({ children }) => (
           </div>
           <Footer data={data}>
             © COPYRIGHT 2019. ALL RIGHTS RESERVED.<br></br>
-            <a href="mailto:micahtyong@gmail.com">micahtyong@gmail.com</a>
           </Footer>
         </>
       )}

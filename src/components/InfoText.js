@@ -10,8 +10,8 @@ const InfoText = props => (
         custom TensorFlow ML models, #justforfun to 
         #letsdosomethingcrazy, my main aim is to solve 
         interesting and impactful problems with great people.</p>
-        <p><strong>micahtyong@gmail.com</strong></p>
-        <p>View my resume <strong>here</strong></p>
+        <p><a href="mailto:micahtyong@gmail.com">micahtyong@gmail.com</a></p>
+        <p>View my resume <a href="https://resumeboys.wixsite.com/resumeboys/about">here</a></p>
     </div>
 )
 
