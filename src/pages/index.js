@@ -6,8 +6,9 @@ import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
 import styled from 'styled-components';
-import Header from '../components/header';
+// import Header from '../components/header';
 import Layout from '../layouts/index';
+import StripeCheckout from 'react-stripe-checkout'
 
 const SectionCaption = styled.p`
   margin: 130px 20px 40px 20px;
@@ -35,6 +36,26 @@ const SectionCellGroup = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `
+class Striper extends React.Component {
+  handlePurchase = (token) => {
+    const amount = 500
+    const description = "My awesome product"
+  
+    const bodyObject = {
+      tokenId: token.id,
+      email: token.email,
+      name: token.name,
+      description,
+      amount
+    }
+  
+    fetch('http://localhost:9000/stripe-charge', {
+      method: 'POST',
+      body: JSON.stringify(bodyObject)
+    })
+  }
+}
+
 
 const IndexPage = () => (
   <Layout>
@@ -49,7 +70,17 @@ const IndexPage = () => (
 
         <p>I love programming, designing, and grooving.</p>
 
-        <Link to="/page-2/">See my work</Link>
+        <StripeCheckout
+          amount={500}
+          image="https://cl.ly/0K2f1V3K3h0D/download/Logo.jpg"
+          token={Striper.handlePurchase}
+          stripeKey={'pk_test_Zr2S9mfUuIIKpjeixs2sRbd200H7M16gyB'}>
+          
+          
+          <Link to="">Support my work</Link>
+          {/* <Link to="/page-2/">Support my work</Link> */}
+        </StripeCheckout>
+        
         <div className = "Logos">
           {/* <img src = {require('../images/enhance.png')} width = "160" />
           <img src = {require('../images/engage.png')} width = "160" />
