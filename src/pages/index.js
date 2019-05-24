@@ -7,7 +7,7 @@ import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
 import styled from 'styled-components';
 import Header from '../components/header';
-import { Layout, query } from '../layouts/index';
+import Layout from '../layouts/index';
 
 const SectionCaption = styled.p`
   margin: 130px 20px 40px 20px;
@@ -37,8 +37,9 @@ const SectionCellGroup = styled.div`
 `
 
 const IndexPage = () => (
+  <Layout>
   <div>
-  <Header />
+  
     <div className = "Hero">
       <div className = "HeroGroup">
         <h1>Hi!<br />I’m Micah Yong</h1>
@@ -94,6 +95,7 @@ const IndexPage = () => (
     ))}
     </SectionCellGroup>
   </div>
+  </Layout>
 )
 
 export default IndexPage
