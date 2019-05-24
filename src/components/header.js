@@ -31,7 +31,7 @@ class Header extends React.Component {
         <div className = "HeaderGroup">
           <img src = {require('../images/Icon.png')} 
           width = "30"></img>
-          <Link to = "/work">Work</Link>
+          <Link to = "/">Work</Link>
           <Link to = "/about">About</Link>
           {/* <Link to = "/about"><button>About</button></Link> */}
         </div>

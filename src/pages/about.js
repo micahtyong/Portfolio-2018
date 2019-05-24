@@ -1,0 +1,26 @@
+import React from 'react'
+import Link from 'gatsby-link'
+import Layout from '../layouts';
+import Section from '../components/Section';
+import styled from 'styled-components';
+
+const Aboutie = styled.div`
+    @media (max-width: 750px) {
+        ${'' /* height: 1050px; */}
+    }
+`
+
+const About = () => (
+    <Layout>
+        <div>
+            <div className = "Hero">
+                <Section
+                    logo={require('../images/Icon.png')}
+                    demo={require('../images/ProPic2.jpg')}
+                />
+            </div>
+        </div>
+    </Layout>
+)
+
+export default About

@@ -30,6 +30,23 @@ a {
   text-align: center;
 }
 
+.Hero button {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: #E64B3E;
+  padding: 15px 23px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 25px; 
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero button:hover {
+  background: white;
+  color: black;
+}
+
 .Hero h1 {
   margin: 0;
   font-size: 60px;
@@ -53,17 +70,11 @@ a {
 .Hero a {
   font-size: 17x;
   font-weight: 600;
-  color: white;
-  text-transform: uppercase;
-  background: #E64B3E;
-  padding: 11px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px; 
+  color: #E64B3E;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a:hover {
-  background: white;
   color: black;
 }
 

@@ -6,7 +6,6 @@ import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
 import styled from 'styled-components';
-// import Header from '../components/header';
 import Layout from '../layouts/index';
 import StripeCheckout from 'react-stripe-checkout'
 
@@ -60,7 +59,6 @@ class Striper extends React.Component {
 const IndexPage = () => (
   <Layout>
   <div>
-  
     <div className = "Hero">
       <div className = "HeroGroup">
         <h1>Hi!<br />I’m Micah Yong</h1>
@@ -75,10 +73,7 @@ const IndexPage = () => (
           image="https://cl.ly/0K2f1V3K3h0D/download/Logo.jpg"
           token={Striper.handlePurchase}
           stripeKey={'pk_test_Zr2S9mfUuIIKpjeixs2sRbd200H7M16gyB'}>
-          
-          
-          <Link to="">Support my work</Link>
-          {/* <Link to="/page-2/">Support my work</Link> */}
+          <button>Support my work</button>
         </StripeCheckout>
         
         <div className = "Logos">
@@ -90,7 +85,7 @@ const IndexPage = () => (
       <Wave />
     </div>
     <div className = "Cards">
-      <h2>SHOWING ALL</h2>
+      <h2>FEATURED</h2>
         <div className = "CardGroup">
           <Card 
             title = "Enhance"
@@ -112,12 +107,11 @@ const IndexPage = () => (
           />
         </div>
     </div>
-    <Section 
-      // image={require('../images/White.png')}
+    {/* <Section 
       logo={require('../images/Icon.png')}
       demo={require('../images/ProPic2.jpg')}
-    />
-    <SectionCaption>All projects</SectionCaption>
+    /> */}
+    <SectionCaption>SHOWING ALL</SectionCaption>
     <SectionCellGroup>
     {staticdata.cells.map(cell => (
       <Cell

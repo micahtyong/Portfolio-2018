@@ -4,12 +4,12 @@ import Wave from '../components/Wave';
 import InfoText from './InfoText';
 
 const SectionGroup = styled.div`
-    background: white;
-    background-size: cover;
-    height: 720px;
+    background-color: rgba(0,0,0,.0);
+    ${'' /* background-size: cover; */}
+    height: 692px;
     display: grid;
     grid-template-rows: 200px auto;
-    grid-gap: 20px;
+    grid-gap: 10px;
     position: relative;
 
     @media (max-width: 640px) {
@@ -18,16 +18,16 @@ const SectionGroup = styled.div`
 `
 const SectionLogo = styled.img`
     align-self: end;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
 `
 
 const SectionTitleGroup = styled.div`
     display: grid;
     grid-template-columns: 550px auto;
-    margin: 0 40px;
-    grid-gap: 20px; 
+    margin: 0 auto;
+    grid-gap: 30px; 
     grid-template-rows: auto 100%;
 
     @media (max-width: 720px) {
@@ -36,9 +36,15 @@ const SectionTitleGroup = styled.div`
 `
 
 const SectionPhoto = styled.img`
-    width: 550px;
-    height: 412.68px;
-    margin: 0 auto;
+    width: 480px;
+    height: 360.16px;
+    margin: 0 5px 0 auto;
+
+    @media (max-width: 640px) {
+        width: 320px;
+        height: 240.11px;
+        margin: 0 auto;
+    }
 `
 
 const SectionTitle = styled.h3`
@@ -77,17 +83,17 @@ const WaveBottom = styled.div`
 `
 
 const SectionInfo = styled.div`
+    margin: 0px auto;
+    width: 100%;
+    height: 592px;
 `
 
 const Section = props => (
     <SectionGroup>
         <SectionLogo src={props.logo} />
         <SectionTitleGroup>
-            <SectionPhoto image={props.demo} />
+            <SectionPhoto src={props.demo} />
             <SectionInfo><InfoText /></SectionInfo>
-            {/* <SectionTitle>{props.title}</SectionTitle>
-            <SectionTitle>{props.subtitle}</SectionTitle>
-            <SectionText>{props.text}</SectionText> */}
         </SectionTitleGroup>
     </SectionGroup>
 )
