@@ -14,8 +14,10 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
     />
-    <Header />
-    {children()}
+    {children}
+    {data.allContentfulLink.edges.map(edge => (
+      <a href={edge.node.url}>{edge.node.title}</a>
+    ))}
   </div>
 )
 
@@ -32,6 +34,14 @@ export const query = graphql`
         title
         description
         keywords
+      }
+    }
+    allContentfulLink {
+      edges {
+        node {
+          title
+          url
+        }
       }
     }
   }

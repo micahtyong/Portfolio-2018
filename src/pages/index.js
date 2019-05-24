@@ -1,11 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 import Card from '../components/Card';
 import Section from '../components/Section';
 import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Header from '../components/header';
+import { Layout, query } from '../layouts/index';
 
 const SectionCaption = styled.p`
   margin: 130px 20px 40px 20px;
@@ -36,6 +38,7 @@ const SectionCellGroup = styled.div`
 
 const IndexPage = () => (
   <div>
+  <Header />
     <div className = "Hero">
       <div className = "HeroGroup">
         <h1>Hi!<br />I’m Micah Yong</h1>
