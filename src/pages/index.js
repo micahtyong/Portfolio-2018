@@ -87,20 +87,10 @@ const IndexPage = () => (
 
         <p>I promise that my projects, designs, and dance moves won't bore you.</p>
 
-        {/* <StripeCheckout
-          amount={500}
-          image="https://cl.ly/0K2f1V3K3h0D/download/Logo.jpg"
-          token={Striper.handlePurchase}
-          stripeKey={'pk_test_Zr2S9mfUuIIKpjeixs2sRbd200H7M16gyB'}>
-          <button>Support my work</button>
-        </StripeCheckout> */}
-
         <a className="Mover" href="#my-projects">See my work</a>
         
         <div className = "Logos">
-          {/* <img src = {require('../images/enhance.png')} width = "160" />
-          <img src = {require('../images/engage.png')} width = "160" />
-          <img src = {require('../images/partytime.png')} width = "160" /> */}
+          {/* <img src = {require('../images/enhance.png')} width = "160" /> */}
         </div>
       </div>
       <Wave />
@@ -109,7 +99,7 @@ const IndexPage = () => (
         <div></div>
     </ScrollableAnchor>
     <div className = "Cards">
-      <h2>FEATURED</h2>
+      <h2>HIGHLIGHTS</h2>
         <div className = "CardGroup">
           <Card 
             title = "Enhance"

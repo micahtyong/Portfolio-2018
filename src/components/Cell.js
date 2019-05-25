@@ -23,6 +23,7 @@ const CellTitle = styled.div`
     padding: 30px 0;
 `
 
+
 const Cell = props => (
     <CellGroup>
         <CellImage image = {props.image}></CellImage>
