@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import Layout from '../layouts/index';
 import StripeCheckout from 'react-stripe-checkout'
 import ScrollableAnchor from 'react-scrollable-anchor'
-import { configureAnchors } from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor';
  
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
@@ -134,10 +134,6 @@ const IndexPage = () => (
           />
         </div>
     </div>
-    {/* <Section 
-      logo={require('../images/Icon.png')}
-      demo={require('../images/ProPic2.jpg')}
-    /> */}
     <SectionCaption>SHOWING ALL</SectionCaption>
     <SectionCellGroup>
     {staticdata.cells.map(cell => (
