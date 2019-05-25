@@ -9,6 +9,11 @@ import styled from 'styled-components';
 import Layout from '../layouts/index';
 import StripeCheckout from 'react-stripe-checkout'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+ 
+// Offset all anchors by -60 to account for a fixed header
+// and scroll more quickly than the default 400ms
+configureAnchors({offset: -80, scrollDuration: 500})
 
 const SectionCaption = styled.p`
   margin: 130px 20px 40px 20px;
@@ -19,7 +24,7 @@ const SectionCaption = styled.p`
   text-align: center;
 
   @media (max-width: 800px) {
-    margin: 480px 20px 40px 20px;
+    margin: 60px 20px 40px 20px;
   }
 `
 
