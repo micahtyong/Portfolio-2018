@@ -4,6 +4,7 @@ import Header from '../components/header';
 import './index.css'
 import Footer from '../components/Footer';
 import { StaticQuery, graphql } from "gatsby"
+import favicon from '../images/favicon-32x32.png';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,7 +30,12 @@ const Layout = ({ children }) => (
       `}
      render={data => (
         <>
-          <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title} />
+          <Helmet 
+            titleTemplate={`%s | ${data.site.siteMetadata.title}`}defaultTitle={data.site.siteMetadata.title} 
+            link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+            ]}
+          />
           <Header />
           <div>
             {children}

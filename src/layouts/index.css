@@ -137,12 +137,12 @@ a {
 }
 
 .Cards {
+  border: 20px solid #E64B3E;
   background: #E64B3E;
 }
 
 .Cards h2 {
   margin: 0px 20px;
-  /* color: #FFFFFF; */
   font-size: 40px;
   text-align: center;
   font-weight: 700;
@@ -152,7 +152,7 @@ a {
 }
 
 .CardGroup {
-  margin: 50px 40px 0px;
+  margin: 60px 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
