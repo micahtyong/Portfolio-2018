@@ -38,7 +38,7 @@ const SectionTitleGroup = styled.div`
 const SectionPhoto = styled.img`
     width: 480px;
     height: 360.16px;
-    margin: 0 5px 0 auto;
+    margin: 0 auto;
 
     @media (max-width: 640px) {
         width: 320px;

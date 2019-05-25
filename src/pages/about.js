@@ -13,14 +13,14 @@ const Aboutie = styled.div`
 
 const About = () => (
     <Layout>
-        <div>
+        <Aboutie>
             <div className = "Hero">
                 <Section
                     logo={require('../images/Icon.png')}
                     demo={require('../images/ProPic2.jpg')}
                 />
             </div>
-        </div>
+        </Aboutie>
     </Layout>
 )
 

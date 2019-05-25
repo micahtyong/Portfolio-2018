@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import './Header.css'
-import StripeCheckout from 'react-stripe-checkout'
 
 class Header extends React.Component {
 
@@ -29,11 +28,16 @@ class Header extends React.Component {
     return (
       <div className = {this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className = "HeaderGroup">
-          <img src = {require('../images/Icon.png')} 
-          width = "30"></img>
-          <Link to = "/">Work</Link>
-          <Link to = "/about">About</Link>
-          {/* <Link to = "/about"><button>About</button></Link> */}
+          {/* <img src = {require('../images/Icon.png')} 
+          width = "30"></img> */}
+          <div className = "IconLoc">
+            <img src = {require('../images/Icon.png')} 
+            width = "30"></img>
+          </div>
+          <div className = "Menu">
+            <Link to = "/">Work</Link>
+            <Link to = "/about">About</Link>
+          </div>
         </div>
       </div>
     )
