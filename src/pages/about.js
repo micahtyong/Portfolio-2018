@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Layout from '../layouts';
+import Layout from '../layouts/index';
 import Section from '../components/Section';
 import styled from 'styled-components';
+import '../layouts/about.css'
 
 const Aboutie = styled.div`
     @media (max-width: 750px) {

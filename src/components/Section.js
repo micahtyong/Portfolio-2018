@@ -4,8 +4,8 @@ import Wave from '../components/Wave';
 import InfoText from './InfoText';
 
 const SectionGroup = styled.div`
+    margin: 0 60px;
     background-color: rgba(0,0,0,.0);
-    ${'' /* background-size: cover; */}
     height: 692px;
     display: grid;
     grid-template-rows: 200px auto;
@@ -67,19 +67,6 @@ const SectionText = styled.p`
     @media (max-width: 720px) {
         font-size: 14px;
     }
-`
-
-const WaveTop = styled.div`
-    position: absolute;
-    width: 100%;
-    top: -6px;
-    transform: rotate(180deg)
-`
-
-const WaveBottom = styled.div`
-    position: absolute;
-    width: 100%;
-    bottom: -6px;
 `
 
 const SectionInfo = styled.div`

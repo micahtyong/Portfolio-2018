@@ -40,7 +40,7 @@ const InfoText = props => (
         <Hello>Hi, I’m Micah.<br />Currently a computer science student at UC Berkeley.</Hello>
         <Description>On this site, you will find a collection of my work which showcases a broad spectrum of my abilities. From iOS development to React applications, custom TensorFlow ML models to applied algorithms, #justforfun to #letsdosomethingcrazy, my main aim is to solve interesting and impactful problems with great people.</Description>
         <Description><a href="mailto:micahtyong@gmail.com">micahtyong@gmail.com</a></Description>
-        <Description>View my resume <a href="https://resumeboys.wixsite.com/resumeboys/about">here</a></Description>
+        <Description>View my resume <a href="https://drive.google.com/file/d/10QALVyUBpf4J-qVG1Cm5XJ-JGNS99jXm/view?usp=sharing">here</a></Description>
     </InformText>
 )
 
